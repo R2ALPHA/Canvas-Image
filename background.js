@@ -11,16 +11,10 @@ function Background(image) {
      */
     this.draw = (context) => {
 
-        const hratio = context.canvas.width / this.width;
-        const vratio = context.canvas.height / this.height;
-        const ratio = Math.min(hratio, vratio);
-        const shiftX = (context.canvas.width - this.width * ratio) / 2;
-        const shiftY = (context.canvas.height - this.height * ratio) / 2;
+        const shiftX = (context.canvas.width - this.width) / 2;
+        const shiftY = (context.canvas.height - this.height) / 2;
 
-        const width = this.width * this.ratio;
-        const height = this.height * this.ratio;
-
-        context.drawImage(this.image, 0, 0, this.width, this.height, shiftX - context.canvas.width * 0.25, shiftY, width, height);
+        context.drawImage(this.image, 0, 0, this.width, this.height, shiftX - context.canvas.width * 0.25, shiftY, this.width, this.height);
     };
 
     /**
