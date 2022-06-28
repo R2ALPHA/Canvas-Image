@@ -30,5 +30,8 @@ An attempt is made to implement that feature using HTML5 Canvas.
 
 The top-left 50% of the canvas shows the image to scale and the other half shows the scaled image. 
 
+## Future scope
+- For touch screen (using Hammer.js or javascript native events)
+
 # Credits
 Image : https://rukminim2.flixcart.com/image/832/832/k0o69ow0/smartwatch/3/s/c/mwv82hn-a-apple-original-imafkffzz6ppzemy.jpeg?q=70
